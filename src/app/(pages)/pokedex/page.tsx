@@ -1,5 +1,5 @@
-import Search from "@/app/components/search";
 import PokemonList from "@/app/components/pokemonList";
+import Search from "@/app/components/search";
 
 type Props = {
   searchParams?: {
@@ -7,7 +7,7 @@ type Props = {
   };
 };
 
-export default async function Pokedex({ searchParams }: Props) {
+const Pokedex = ({ searchParams }: Props) => {
   const currentPage = parseInt(searchParams?.page ?? "1");
 
   return (
@@ -18,4 +18,6 @@ export default async function Pokedex({ searchParams }: Props) {
       </div>
     </section>
   );
-}
+};
+
+export default Pokedex;
