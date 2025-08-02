@@ -1,0 +1,31 @@
+// tailwind-preserve-classes.ts
+const preserve = [
+  "bg-[var(--color-background)]",
+  "bg-[var(--color-foreground)]",
+  "bg-[var(--color-primary)]",
+  "bg-[var(--color-secondary)]",
+  "bg-[var(--color-thirdy)]",
+  "bg-[var(--color-danger)]",
+  "bg-[var(--color-white)]",
+  "bg-[var(--color-black)]",
+  "bg-[var(--color-grass)]",
+  "bg-[var(--color-steel)]",
+  "bg-[var(--color-dark)]",
+  "bg-[var(--color-rock)]",
+  "bg-[var(--color-bug)]",
+  "bg-[var(--color-ice)]",
+  "bg-[var(--color-water)]",
+  "bg-[var(--color-fire)]",
+  "bg-[var(--color-flying)]",
+  "bg-[var(--color-fighting)]",
+  "bg-[var(--color-dragon)]",
+  "bg-[var(--color-normal)]",
+  "bg-[var(--color-ghost)]",
+  "bg-[var(--color-psychic)]",
+  "bg-[var(--color-poison)]",
+  "bg-[var(--color-fairy)]",
+  "bg-[var(--color-ground)]",
+  "bg-[var(--color-electric)]",
+];
+
+export default preserve;
