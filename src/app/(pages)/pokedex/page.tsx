@@ -1,13 +1,14 @@
+// src/app/(pages)/pokedex/page.tsx
 import PokemonList from "@/app/components/pokemonList";
 import Search from "@/app/components/search";
 
-type Props = {
+interface PokedexProps {
   searchParams?: {
     page?: string;
   };
-};
+}
 
-const Pokedex = ({ searchParams }: Props) => {
+export default function Pokedex({ searchParams }: PokedexProps) {
   const currentPage = parseInt(searchParams?.page ?? "1");
 
   return (
@@ -18,6 +19,4 @@ const Pokedex = ({ searchParams }: Props) => {
       </div>
     </section>
   );
-};
-
-export default Pokedex;
+}
