@@ -1,14 +1,14 @@
-import PokemonList from "@/app/components/pokemonList";
 import Search from "@/app/components/search";
+import PokemonList from "@/app/components/pokemonList";
 
-type PokedexProps = {
-  searchParams: {
+type Props = {
+  searchParams?: {
     page?: string;
   };
 };
 
-const Pokedex = async ({ searchParams }: PokedexProps) => {
-  const currentPage = parseInt(searchParams.page ?? "1");
+export default async function Pokedex({ searchParams }: Props) {
+  const currentPage = parseInt(searchParams?.page ?? "1");
 
   return (
     <section className="w-full h-fit text-[#000000] bg-white">
@@ -18,6 +18,4 @@ const Pokedex = async ({ searchParams }: PokedexProps) => {
       </div>
     </section>
   );
-};
-
-export default Pokedex;
+}
